@@ -21,31 +21,6 @@ function [X, fX, i] = fmincg(f, X, options, P1, P2, P3, P4, P5)
 % solution "X", a vector of function values "fX" indicating the progress made
 % and "i" the number of iterations (line searches or function evaluations,
 % depending on the sign of "length") used.
-%
-% Usage: [X, fX, i] = minimize(X, f, length, P1, P2, P3, P4, P5)
-%
-% See also: checkgrad 
-%
-% Copyright (C) 2001 and 2002 by Carl Edward Rasmussen. Date 2002-02-13
-%
-%
-% (C) Copyright 1999, 2000 & 2001, Carl Edward Rasmussen
-% 
-% Permission is granted for anyone to copy, use, or modify these
-% programs and accompanying documents for purposes of research or
-% education, provided this copyright notice is retained, and note is
-% made of any changes that have been made.
-% 
-% These programs and documents are distributed without any warranty,
-% express or implied.  As the programs were written for research
-% purposes only, they have not been tested to the degree that would be
-% advisable in any important application.  All use of these programs is
-% entirely at the user's own risk.
-%
-% [ml-class] Changes Made:
-% 1) Function name and argument specifications
-% 2) Output display
-%
 
 % Read options
 if exist('options', 'var') && ~isempty(options) && isfield(options, 'MaxIter')
